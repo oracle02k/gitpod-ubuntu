@@ -11,20 +11,21 @@ USER gitpod
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN sudo apt-get update
-# RUN sudo apt-get install -y bash
-RUN sudo apt-get install -y coreutils 
-RUN sudo apt-get install -y grep 
-RUN sudo apt-get install -y iproute2 
-RUN sudo apt-get install -y iputils-ping 
-RUN sudo apt-get install -y traceroute 
-RUN sudo apt-get install -y tcpdump 
-RUN sudo apt-get install -y bind9-dnsutils 
-RUN sudo apt-get install -y dnsmasq-base 
-RUN sudo apt-get install -y netcat-openbsd 
-RUN sudo apt-get install -y python3 
-RUN sudo apt-get install -y curl 
-RUN sudo apt-get install -y wget 
-RUN sudo apt-get install -y iptables 
-RUN sudo apt-get install -y procps 
-RUN sudo apt-get install -y isc-dhcp-client
+RUN sudo apt-get update && \
+    sudo apt-get install -y \
+    bash \
+    coreutils \ 
+    grep \
+    iproute2 \ 
+    iputils-ping \ 
+    traceroute \
+    tcpdump \
+    bind9-dnsutils \
+    dnsmasq-base \
+    netcat-openbsd \
+    python3 \
+    curl \
+    wget \
+    iptables \
+    procps \
+    isc-dhcp-client
