@@ -26,6 +26,6 @@ RUN sudo apt-get update && \
     python3 \
     curl \
     wget \
-    iptables \
+    # iptables \
     procps \
     isc-dhcp-client
