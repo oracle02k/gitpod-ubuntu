@@ -12,7 +12,7 @@ USER gitpod
 # More information: https://www.gitpod.io/docs/config-docker/
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y install bash
+# RUN sudo apt-get install -y install bash
 RUN sudo apt-get install -y install     coreutils 
 RUN sudo apt-get install -y install     grep 
 RUN sudo apt-get install -y install     iproute2 
